@@ -42,7 +42,8 @@ header{
     color: #b74b4b;
     font-weight: 800;
     cursor: pointer;
-    transition: 0.5s ease; 
+    transition: 0.5s ease;
+    margin-left: 0px;
 }
 
 .logo:hover{
@@ -112,22 +113,12 @@ nav a:active{
   }
 }
 
-
-
-section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
+.heading{
+    max-width: 100dvw;
+    position: sticky;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    background-color: black;
-}
-
-.home.home-content hi{
+.home.home-content h1{
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
@@ -143,16 +134,23 @@ span{
     font-weight: 700;
 }
 
-.home-img{
-    border-radius: 80%;
+.home{
+    display: flex;
+    flex-direction: row;
 }
 
-.home-img img{
-    position: relative;
-    width: 32vw;
-    box-shadow: 0 0 25px solid #b74b4b;
-    cursor: pointer;
-    transition: 0.2s linear;
+.image{
+
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+.content{
+    padding: 20px;
+    border: 20px;
+
 }
 
 .home-img img:hover{
